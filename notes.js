@@ -6,7 +6,7 @@ const getNotes = function () {
 
 const addNote = function (title, body) {
   const notes = loadNotes();
-  const duplicateNotes = notes.filter((note) => note.title === title);
+  const duplicateNotes = notes.filter(note => note.title === title);
   if (duplicateNotes.length === 0) {
     console.log('reading notes', notes);
     notes.push({
@@ -42,7 +42,7 @@ const loadNotes = function () {
 
 const removeNote = function (title) {
   const notes = loadNotes();
-  const newNotes = notes.filter((note) => note.title !== title);
+  const newNotes = notes.filter(note => note.title !== title);
   saveNotes(newNotes);
 };
 

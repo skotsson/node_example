@@ -4,7 +4,9 @@
   "description": "note app for training",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "add": "node app.js add",
+    "remove": "node app.js remove",
+    "list": "node app.js list"
   },
   "author": "Scott Henderson",
   "license": "ISC",
